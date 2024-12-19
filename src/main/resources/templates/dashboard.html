@@ -6,10 +6,55 @@
     <title>Dashboard</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #343a40;
+        }
+        .card-text {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .btn-info:hover {
+            background-color: #17a2b8;
+            transform: scale(1.05);
+        }
+        .btn-success:hover {
+            background-color: #28a745;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
+
 <div class="container mt-5">
-    <h1 class="text-center mb-4">Welcome to the Dashboard</h1>
+    <h1 class="text-center mb-5 text-primary">Welcome to the Dashboard</h1>
 
     <div class="row">
         <!-- Create Customer -->
@@ -17,7 +62,7 @@
             <div class="card">
                 <div class="card-body text-center">
                     <h5 class="card-title">Create Customer</h5>
-                    <p class="card-text">Add new customers to the system.</p>
+                    <p class="card-text">Add new customers to the system with ease.</p>
                     <a href="/customers/new" class="btn btn-primary">Create New Customer</a>
                 </div>
             </div>
@@ -28,7 +73,7 @@
             <div class="card">
                 <div class="card-body text-center">
                     <h5 class="card-title">View Jobs</h5>
-                    <p class="card-text">View and manage the orders and jobs.</p>
+                    <p class="card-text">View and manage the orders and jobs for your customers.</p>
                     <a href="/orders" class="btn btn-info">View Jobs</a>
                 </div>
             </div>
@@ -39,13 +84,12 @@
             <div class="card">
                 <div class="card-body text-center">
                     <h5 class="card-title">View Invoices</h5>
-                    <p class="card-text">View and manage invoices for your customers.</p>
+                    <p class="card-text">Manage invoices, payments, and other financials for your customers.</p>
                     <a href="/invoices" class="btn btn-success">View Invoices</a>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 
 <!-- Bootstrap JS & Dependencies -->
